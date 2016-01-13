@@ -23,7 +23,7 @@ public class SignUpServlet extends HttpServlet {
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response) throws ServletException, IOException {
         String login = request.getParameter("login");
-        String pass = request.getParameter("pass");
+        String pass = request.getParameter("password");
 
         UserProfile profile = accountService.getUserByLogin(login);
 
