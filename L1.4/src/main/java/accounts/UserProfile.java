@@ -21,6 +21,7 @@ public class UserProfile {
     }
 
     public String getLogin(){
+
         return login;
     }
 
@@ -29,6 +30,7 @@ public class UserProfile {
     }
 
     public String getEmail(){
+
         return email;
     }
 }

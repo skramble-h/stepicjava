@@ -17,8 +17,8 @@ public class Main {
         MirrorServlet mirrorServlet = new MirrorServlet();
         AccountService accountService = new AccountService();
 
-        accountService.addNewUser(new UserProfile("admin"));
-        accountService.addNewUser(new UserProfile("test"));
+        //accountService.addNewUser(new UserProfile("admin"));
+        //accountService.addNewUser(new UserProfile("test"));
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.addServlet(new ServletHolder(mirrorServlet),"/mirror");
