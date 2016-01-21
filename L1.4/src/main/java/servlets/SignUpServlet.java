@@ -30,7 +30,7 @@ public class SignUpServlet extends HttpServlet {
         if(profile != null){
             response.setContentType("text/html;charset=utf-8");
             response.setStatus(200);
-            response.getWriter().println("Authorized");
+            response.getWriter().println("Authorized" + login);
         }
 
         if (login == null || pass == null) {
